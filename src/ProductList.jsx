@@ -6,7 +6,7 @@ import {useDispatch, useSelector} from "react-redux";
 
 
 
-function ProductList() {
+function ProductList({setShowProductList}) {
     const [showCart, setShowCart] = useState(false); 
     const [showPlants, setShowPlants] = useState(false); // State to control the visibility of the About Us page
     const [addedToCart, setAddedToCart] = useState({});
@@ -256,8 +256,7 @@ function ProductList() {
 
     const handleAboutUsClick = (e) => {
         e.preventDefault();
-        setShowPlants(false);
-        setShowCart(false);
+        setShowProductList(false);
     };
 
    const handleContinueShopping = (e) => {

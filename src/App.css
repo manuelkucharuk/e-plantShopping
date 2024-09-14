@@ -113,6 +113,11 @@
 .product-list-container.visible {
   top: 0;
 }
+
+.product-list-container.hidden {
+  left: 0;
+}
+
 /* LandingPage.css */
 @media screen and (max-width: 768px) {
   .content {
